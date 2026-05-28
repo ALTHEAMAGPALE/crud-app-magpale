@@ -33,3 +33,122 @@ a,
     padding: 0 2rem;
   }
 }
+
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fafc; /* Malinis na light slate gray background */
+  color: #1e293b;
+}
+
+form, .form-container {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
+  border: 1px solid #e2e8f0;
+} 
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px 14px;
+  margin: 8px 0 16px 0;
+  display: inline-block;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background-color: #f1f5f9;
+} 
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #6366f1; /* Indigo focus accent */
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+} 
+
+label {
+  font-weight: 600;
+  color: #475569;
+  font-size: 14px;
+} 
+
+button, .btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+} 
+
+button[type="submit"], .btn-primary {
+  background-color: #4f46e5; /* Royal Indigo */
+  color: white;
+}
+
+button[type="submit"]:hover, .btn-primary:hover {
+  background-color: #4338ca;
+  transform: translateY(-1px);
+} 
+
+.btn-delete, .btn-danger, button.delete {
+  background-color: #ef4444; /* Modern Red */
+  color: white;
+}
+
+.btn-delete:hover, .btn-danger:hover, button.delete:hover {
+  background-color: #dc2626;
+}
+
+.btn-edit, .btn-warning, button.edit {
+  background-color: #f59e0b; /* Amber Gold */
+  color: white;
+}
+
+.btn-edit:hover, .btn-warning:hover, button.edit:hover {
+  background-color: #d97706;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+th {
+  background-color: #f1f5f9;
+  color: #475569;
+  font-weight: 600;
+  text-align: left;
+  padding: 14px 16px;
+  font-size: 14px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  font-size: 14px;
+} 
+
+tr:hover td {
+  background-color: #f8fafc;
+}
